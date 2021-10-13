@@ -1,7 +1,11 @@
+import {removeAccents} from './removeAccents.js';
+
 const url = 'https://api.agify.io/?name='
 
 const fetchData = async(name) => {
-    try { const data = await fetch(url + name);
+    try { const newName = removeAccents(name)
+        console.log(newName);
+        const data = await fetch(url + newName);
         const resp = await data.json();
         console.log(resp);
         return (resp);
