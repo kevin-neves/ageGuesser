@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+
+    /* Colors */
+    --color-primary: blueviolet;
+    --color-primary-ligh: rgb(191, 123, 255);
+    --color-secondary: rgb(79, 7, 146);
+}
+
+body {
+    background-color: var(--color-primary);
+}
+
+main, div, section {
+    display: flex;
+}
+
+main {
+    padding: 50px;
+}
+
+h1 {
+    color: var(--color-primary);
+    padding: 19px;
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    border: 2px solid var(--color-primary);
+    border-radius: 5px;
+}
+
+section {
+    flex-direction: column;
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 50px;
+    padding-bottom: 20px;
+    width: 360px;
+}
+
+input {
+    border: 2px solid;
+    padding: 13px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+input::first-letter {
+    text-transform: capitalize;
+}
+
+footer {
+    font-size: 12px;
+    height: 15px;
+}
+
+.myButton {
+    box-shadow:inset 0px 1px 0px 0px var(--color-primary-ligh);
+	background:linear-gradient(to bottom, var(--color-primary) 5%, var(--color-secondary) 100%);
+	background-color:var(--color-primary);
+	border:1px solid var(--color-secondary);
+    margin-left: 15px;
+    padding: 15px 10px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	text-decoration:none;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, var(--color-primary-ligh) 5%, var(--color-primary) 100%);
+	background-color: var(--color-primary-ligh);
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.response {
+    margin: 30px 0px;
+}
+
